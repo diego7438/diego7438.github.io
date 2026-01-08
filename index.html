@@ -3,101 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Diego | Student & Builder</title>
+  <title>Diego Anderson | Builder</title>
+
   <style>
-  :root {
-    --bg: #0b0e14;
-    --card: #111827;
-    --text: #e5e7eb;
-    --muted: #9ca3af;
-    --accent: #60a5fa;
-  }
+    :root {
+      --bg: #0b0e14;
+      --card: #0f172a;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #60a5fa;
+      --border: #1f2937;
+    }
 
-  body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    margin: 0;
-    padding: 48px 24px;
-    background: radial-gradient(circle at top, #111827, var(--bg));
-    color: var(--text);
-    line-height: 1.7;
-  }
+    * {
+      box-sizing: border-box;
+    }
 
-  .container {
-    max-width: 900px;
-    margin: auto;
-  }
+    body {
+      margin: 0;
+      padding: 56px 24px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: radial-gradient(circle at top, #111827, var(--bg));
+      color: var(--text);
+      line-height: 1.75;
+    }
 
-  h1 {
-    font-size: 3rem;
-    margin-bottom: 0.2em;
-    letter-spacing: -0.03em;
-  }
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
 
-  h2 {
-    margin-top: 2.5em;
-    font-size: 1.5rem;
-    border-bottom: 1px solid #1f2937;
-    padding-bottom: 6px;
-  }
+    header {
+      margin-bottom: 48px;
+    }
 
-  p {
-    color: var(--muted);
-  }
+    h1 {
+      font-size: 3.2rem;
+      margin: 0;
+      letter-spacing: -0.03em;
+    }
 
-  .project {
-    background: linear-gradient(180deg, #111827, #0f172a);
-    border-radius: 14px;
-    padding: 20px;
-    margin-top: 16px;
-    box-shadow: 0 0 0 1px rgba(255,255,255,0.04),
-                0 20px 40px rgba(0,0,0,0.6);
-  }
+    header p {
+      margin-top: 12px;
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 700px;
+    }
 
-  .project h3 {
-    margin-top: 0;
-    color: var(--text);
-  }
+    section {
+      margin-top: 56px;
+    }
 
-  a {
-    color: var(--accent);
-    text-decoration: none;
-  }
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+    }
 
-  a:hover {
-    text-decoration: underline;
-  }
-</style>
+    .project {
+      background: linear-gradient(180deg, #111827, #0b1220);
+      border-radius: 16px;
+      padding: 22px;
+      margin-top: 18px;
+      box-shadow:
+        0 0 0 1px rgba(255,255,255,0.04),
+        0 30px 60px rgba(0,0,0,0.7);
+    }
+
+    .project h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 1.3rem;
+    }
+
+    .project p {
+      margin: 0 0 10px;
+      color: var(--muted);
+    }
+
+    .links a {
+      margin-right: 14px;
+      font-weight: 500;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 80px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+    }
+  </style>
 </head>
+
 <body>
   <div class="container">
-    <h1>Diego</h1>
-    <p>
-      High school student interested in math, science, and building useful software.
-    </p>
-
-    <h2>Projects</h2>
-
-    <div class="project">
-      <h3>School App</h3>
+    <header>
+      <h1>Diego Anderson</h1>
       <p>
-        A web app I built over winter break to help organize school-related tasks.
+        High school student building real software. Interested in computer science,
+        biology, and engineering. I like shipping things that actually work.
       </p>
+    </header>
+
+    <section>
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Windward School Dashboard & AI Assistant</h3>
+        <p>
+          Full-stack web app with dynamic rotation scheduling, role-based dashboards,
+          and a natural-language AI assistant. Built with Flask and PostgreSQL and
+          deployed to production.
+        </p>
+        <div class="links">
+          <a href="https://school-app-wza8.onrender.com" target="_blank">Live Site</a>
+          <a href="https://github.com/diego7438/school-app" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
       <p>
-        <a href="https://diego7438.github.io/school-app/" target="_blank">Live Demo</a> ·
-        <a href="https://github.com/diego7438/school-app" target="_blank">GitHub Repo</a>
+        Python, Flask, JavaScript, HTML/CSS, PostgreSQL, Git/GitHub, security-minded
+        backend design, shipping projects end-to-end.
       </p>
-    </div>
+    </section>
 
-    <h2>Skills</h2>
-    <p>
-      JavaScript, HTML/CSS, Git/GitHub, problem solving, learning fast
-    </p>
+    <section>
+      <h2>About</h2>
+      <p>
+        I enjoy learning by building. My goal is to develop deep technical skill and
+        use it to create things that matter.
+      </p>
+    </section>
 
-    <h2>About</h2>
-    <p>
-      I like taking ideas and turning them into real things. Currently exploring
-      computer science, biology, and engineering.
-    </p>
+    <footer>
+      © 2026 Diego Anderson
+    </footer>
   </div>
 </body>
 </html>
