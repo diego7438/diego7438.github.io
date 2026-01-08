@@ -5,38 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diego | Student & Builder</title>
   <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      margin: 0;
-      padding: 40px;
-      background: #f9fafb;
-      color: #111;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.2em;
-    }
-    h2 {
-      margin-top: 2em;
-    }
-    .project {
-      padding: 16px;
-      background: white;
-      border-radius: 10px;
-      margin-top: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-    }
-    a {
-      color: #2563eb;
-      text-decoration: none;
-      font-weight: 500;
-    }
-  </style>
+  :root {
+    --bg: #0b0e14;
+    --card: #111827;
+    --text: #e5e7eb;
+    --muted: #9ca3af;
+    --accent: #60a5fa;
+  }
+
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 48px 24px;
+    background: radial-gradient(circle at top, #111827, var(--bg));
+    color: var(--text);
+    line-height: 1.7;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0.2em;
+    letter-spacing: -0.03em;
+  }
+
+  h2 {
+    margin-top: 2.5em;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #1f2937;
+    padding-bottom: 6px;
+  }
+
+  p {
+    color: var(--muted);
+  }
+
+  .project {
+    background: linear-gradient(180deg, #111827, #0f172a);
+    border-radius: 14px;
+    padding: 20px;
+    margin-top: 16px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.04),
+                0 20px 40px rgba(0,0,0,0.6);
+  }
+
+  .project h3 {
+    margin-top: 0;
+    color: var(--text);
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
 </head>
 <body>
   <div class="container">
