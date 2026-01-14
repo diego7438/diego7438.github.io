@@ -12,7 +12,10 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
     </nav>
+
+    <div class="cursor"></div>
 
     <!-- HERO -->
     <section>
@@ -54,5 +57,13 @@
       © 2026 Diego Anderson
     </footer>
   </div>
+
+  <script>
+document.addEventListener("mousemove", (e) => {
+  const cursor = document.querySelector(".cursor");
+  cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+});
+</script>
+
 </body>
 </html>

@@ -124,3 +124,25 @@ body {
     transform: translateY(0);
   }
 }
+
+/* FLOATING CURSOR */
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: var(--accent);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s easse-out, width 0.2s ease, height 0.2s ease;
+  z-index: 9999;
+}
+
+a:hover ~ .cursor,
+button:hover ~ .cursor {
+  width: 18px;
+  height: 18px;
+}
